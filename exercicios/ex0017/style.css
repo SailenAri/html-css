@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Work sans',Arial, Helvetica, sans-serif;
+    font-size: 1.05em;
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+/*
+shorthand font
+- font-style -> font-weight -> font-size -> font-family 
+*/
+
+h1 {
+    font: italic bold 2em "Work Sans", sans-serif;
+}
+
+h2 {
+    font: bold 2em 'Work sans', sans-serif;
+}

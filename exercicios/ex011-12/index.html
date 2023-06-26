@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <P>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</P>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+    <hr>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/music 1.mp3" controls title="Lil Peep - Star Shopping"></audio>
+    <audio src="midia/music 2.mp3" controls title="Joji - Danncing in the Dark"></audio>
+    <!--MP3-WAV-OGG-->
+    <hr>
+
+    <h2>Segundo método de reproduzir áudios</h2>
+    <audio preload="metadata" controls loop>
+        <source src="midia/music 1.mp3" type="audio/mpeg">
+        <source src="midia/music 1.ogg" type="audio/ogg">
+        <source src="midia/music 1.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzi audio.
+            <a href="midia/music 1.mp3"></a>Clique aqui para baixar o áudio.
+        </p>
+
+    </audio>
+
+    <h1>Repoduzindo Vídeos</h1>
+    <p>Este vídeoo esta ospedado no meu próprio servidor.</p>
+    <video src="midia/video 1.mp4" width="560" controls poster="imagens/thumb.jpeg"></video>
+
+    <h1>Inserindo vídeos do youtube</h1>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/xnjLYrrfdcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+
+
+
+</body>
+</html>
